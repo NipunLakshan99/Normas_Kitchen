@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">android_App_G6</string>
+    <string name="Admin">Admin Panel</string>
+    <string name="Amain">Admin Login</string>
+    <string name="AdminUser">User Name :-</string>
+    <string name="AdminPass">Password :-</string>
+    <string name="ManageD">Manage Delivery Person</string>
+    <string name="NewD">New Delivery Person</string>
+    <string name="NewDnic">NIC :</string>
+    <string name="NewDemail">Email :</string>
+    <string name="NewDbike">Bike Number :</string>
+    <string name="UpdateP">Update/Delete Person</string>
+</resources>
