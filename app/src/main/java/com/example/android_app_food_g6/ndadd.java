@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.android_app_g6.R;
+
 public class ndadd extends AppCompatActivity {
     public Button button;
     @Override

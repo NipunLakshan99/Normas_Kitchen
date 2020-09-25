@@ -5,6 +5,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.android_app_g6.R;
+
 public class Managedperson extends AppCompatActivity {
     public Button button;
 
