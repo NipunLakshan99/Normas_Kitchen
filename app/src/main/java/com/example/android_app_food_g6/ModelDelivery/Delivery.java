@@ -5,17 +5,19 @@ public class Delivery {
     String fullname;
     String username;
     String nic;
+    String imageurl;
     String mobile;
     String vehicleno;
 
     public Delivery() {
     }
 
-    public Delivery(String id, String fullname, String username, String nic, String mobile, String vehicleno) {
+    public Delivery(String id, String fullname, String username, String nic, String imageurl, String mobile, String vehicleno) {
         this.id = id;
         this.fullname = fullname;
         this.username = username;
         this.nic = nic;
+        this.imageurl = imageurl;
         this.mobile = mobile;
         this.vehicleno = vehicleno;
     }
@@ -50,6 +52,14 @@ public class Delivery {
 
     public void setNic(String nic) {
         this.nic = nic;
+    }
+
+    public String getImageurl() {
+        return imageurl;
+    }
+
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
     }
 
     public String getMobile() {
