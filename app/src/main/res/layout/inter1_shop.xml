@@ -15,6 +15,7 @@
             android:layout_alignParentLeft="true" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nametype"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
@@ -32,15 +33,16 @@
             android:layout_alignParentRight="true">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnedit"
                 android:layout_width="80dp"
                 android:layout_height="50sp"
-                android:text="Edit"
-                android:visibility="gone" />
+                android:text="Edit"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

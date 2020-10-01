@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android_app_food_g6.ActivityShop.Login">
+    tools:context="com.example.android_app_food_g6.ActivityShop.RegisterCus">
 
     <TextView
         android:id="@+id/textView11"
@@ -13,7 +13,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="45dp"
         android:layout_marginEnd="8dp"
-        android:text="Log In"
+        android:text="Customer Registration"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/un"
+        android:id="@+id/unreg"
         android:layout_width="355dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/pw"
+        android:id="@+id/pwreg"
         android:layout_width="363dp"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
@@ -48,32 +48,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/un" />
+        app:layout_constraintTop_toBottomOf="@+id/unreg" />
+
+    <EditText
+        android:id="@+id/addressreg"
+        android:layout_width="363dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwreg" />
 
     <Button
-        android:id="@+id/btnlogin"
+        android:id="@+id/btnreg"
         android:layout_width="176dp"
         android:layout_height="54dp"
-        android:layout_marginTop="52dp"
-        android:text="Login"
+        android:layout_marginTop="32dp"
+        android:text="Register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pw" />
-
-    <TextView
-        android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="Dont have account? Register"
-        android:textAllCaps="false"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+        app:layout_constraintTop_toBottomOf="@+id/addressreg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

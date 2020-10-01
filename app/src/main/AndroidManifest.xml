@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android_app_g6">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,39 +13,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.android_app_food_g6.ActivityDelivery.RegisterDelivery">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.RegisterCus"></activity>
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.Bill"></activity>
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.AddFoods" />
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.EditFoods" />
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.Cart" />
+        <activity android:name="com.example.android_app_food_g6.ActivityDelivery.RegisterDelivery"></activity>
         <activity android:name="com.example.android_app_food_g6.ActivityDelivery.LoginDelivery" />
         <activity android:name="com.example.android_app_food_g6.ActivityDelivery.MainActivityDelivery" />
-
-        <activity android:name="com.example.android_app_food_g6.MainActivity">
-
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.adminpanel">
-
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.Managedperson">
-
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.ndadd">
-
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.udperson">
-
-        </activity>
-
-        <activity android:name="com.example.android_app_food_g6.ActivityShop.Menu">
+        <activity android:name="com.example.android_app_food_g6.MainActivity" />
+        <activity android:name="com.example.android_app_food_g6.adminpanel" />
+        <activity android:name="com.example.android_app_food_g6.Managedperson" />
+        <activity android:name="com.example.android_app_food_g6.ndadd" />
+        <activity android:name="com.example.android_app_food_g6.udperson" />
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.Menu"></activity>
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.Interface3" />
     </application>
 
 </manifest>
