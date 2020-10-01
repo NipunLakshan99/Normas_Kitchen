@@ -86,8 +86,8 @@ public class ProfileDelivery extends Fragment {
                 if (!delivery.getNic().isEmpty()){
                     nic.setText(delivery.getNic());
                 }
-                if (!delivery.getMobile().isEmpty()){
-                    mobile.setText(delivery.getMobile());
+                if (!delivery.getMobil().isEmpty()){
+                    mobile.setText(delivery.getMobil());
                 }
                 if (!delivery.getVehicleno().isEmpty()){
                     vehicleno.setText(delivery.getVehicleno());

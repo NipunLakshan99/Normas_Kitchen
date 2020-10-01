@@ -2,65 +2,75 @@ package com.example.android_app_food_g6.FragmentDelivery;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.android_app_food_g6.AdapterDelivery.OrdersAdapter;
+import com.example.android_app_food_g6.Model.Orders;
 import com.example.android_app_g6.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ordersDelivery#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class ordersDelivery extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    ArrayList<Orders> orderlist;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public ordersDelivery() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ordersDelivery.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ordersDelivery newInstance(String param1, String param2) {
-        ordersDelivery fragment = new ordersDelivery();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    DatabaseReference databaseReference;
+    OrdersAdapter adapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_orders_delivery, container, false);
+        View view = inflater.inflate(R.layout.fragment_orders_delivery, container, false);
+        databaseReference = FirebaseDatabase.getInstance().getReference("Order");
+        orderlist = new ArrayList<>();
+        RecyclerView recyclerView = view.findViewById(R.id.orderdata);
+        FragmentManager fragmentManager = getFragmentManager();
+        adapter = new OrdersAdapter(getActivity());
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                orderlist.clear();
+                for(DataSnapshot snap1:snapshot.getChildren()){
+                    Orders od=new Orders();
+                    od.setAddress(snap1.child("addres").getValue().toString());
+                    od.setOrdertime(snap1.child("time").getValue().toString());
+                    od.setPaymenttype(snap1.child("payment").getValue().toString());
+                    od.setPrice(snap1.child("price").getValue().toString());
+                    od.setOrderid(snap1.getKey());
+                    if (snap1.child("status").getValue()!=null){
+                        od.setStatus(snap1.child("status").getValue().toString());
+                    }
+                    orderlist.add(od);
+                }
+                adapter.loadOrders(orderlist);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        return view;
     }
 }

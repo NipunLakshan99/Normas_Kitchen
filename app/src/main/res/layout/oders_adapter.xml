@@ -21,7 +21,7 @@
 
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/coup_date"
+            android:id="@+id/order_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -47,7 +47,7 @@
 
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/coup_time"
+            android:id="@+id/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -73,7 +73,7 @@
 
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/coup_shopname"
+            android:id="@+id/p_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -95,44 +95,19 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:padding="8dp"
-            android:text="User Name"
-            android:textColor="#1E1E1E" />
-
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/coupen_count"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:padding="8dp"
-            android:text="Kamal Gunarathna"
-            android:textColor="#1E1E1E" />
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:padding="8dp"
             android:text="Address"
             android:textColor="#1E1E1E" />
 
     </RelativeLayout>
 
     <EditText
+        android:id="@+id/address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="194c/mithree road kotahena alpitiya" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete"
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_margin="8dp"
@@ -141,6 +116,7 @@
         android:textColor="#FFFFFF" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm"
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_margin="8dp"

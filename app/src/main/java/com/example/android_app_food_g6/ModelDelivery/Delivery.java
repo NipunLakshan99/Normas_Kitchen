@@ -6,19 +6,19 @@ public class Delivery {
     String username;
     String nic;
     String imageurl;
-    String mobile;
+    String mobil;
     String vehicleno;
 
     public Delivery() {
     }
 
-    public Delivery(String id, String fullname, String username, String nic, String imageurl, String mobile, String vehicleno) {
+    public Delivery(String id, String fullname, String username, String nic, String imageurl, String mobil, String vehicleno) {
         this.id = id;
         this.fullname = fullname;
         this.username = username;
         this.nic = nic;
         this.imageurl = imageurl;
-        this.mobile = mobile;
+        this.mobil = mobil;
         this.vehicleno = vehicleno;
     }
 
@@ -62,12 +62,12 @@ public class Delivery {
         this.imageurl = imageurl;
     }
 
-    public String getMobile() {
-        return mobile;
+    public String getMobil() {
+        return mobil;
     }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
+    public void setMobil(String mobil) {
+        this.mobil = mobil;
     }
 
     public String getVehicleno() {
