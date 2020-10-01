@@ -38,9 +38,11 @@ import android.widget.Toast;
 
 import java.util.HashMap;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 
 public class ProfileDelivery extends Fragment {
-    AppCompatImageView userimg;
+    CircleImageView userimg;
     AppCompatEditText fullname,uname,nic,mobile,vehicleno,email;
     AppCompatButton update;
 

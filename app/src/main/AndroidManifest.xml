@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.android_app_food_g6.ActivityDelivery.RegisterDelivery">
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.ActivityDelivery.LoginDelivery" >
+        <activity android:name="com.example.android_app_food_g6.ActivityDelivery.mainScreen"></activity>
+        <activity android:name="com.example.android_app_food_g6.ActivityDelivery.RegisterDelivery"></activity>
+        <activity android:name="com.example.android_app_food_g6.ActivityDelivery.LoginDelivery">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,25 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.android_app_food_g6.ActivityDelivery.MainActivityDelivery" />
-
-        <activity android:name="com.example.android_app_food_g6.MainActivity">
-
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.adminpanel">
-
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.Managedperson">
-
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.ndadd">
-
-        </activity>
-        <activity android:name="com.example.android_app_food_g6.udperson">
-
-        </activity>
-
-        <activity android:name="com.example.android_app_food_g6.ActivityShop.Menu">
-        </activity>
+        <activity android:name="com.example.android_app_food_g6.MainActivity"></activity>
+        <activity android:name="com.example.android_app_food_g6.adminpanel"></activity>
+        <activity android:name="com.example.android_app_food_g6.Managedperson"></activity>
+        <activity android:name="com.example.android_app_food_g6.ndadd"></activity>
+        <activity android:name="com.example.android_app_food_g6.udperson"></activity>
+        <activity android:name="com.example.android_app_food_g6.ActivityShop.Menu"></activity>
     </application>
 
 </manifest>
