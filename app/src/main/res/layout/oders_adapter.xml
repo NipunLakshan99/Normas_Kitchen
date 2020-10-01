@@ -133,12 +133,19 @@
         android:text="194c/mithree road kotahena alpitiya" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
         android:layout_margin="8dp"
         android:background="@drawable/button_background"
         android:text="Delete"
-        android:textColor="#FFFFFF"
-        android:layout_width="match_parent"
-        android:layout_height="36dp" />
+        android:textColor="#FFFFFF" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_boader_dark"
+        android:text="Confirm"
+        android:textColor="#AA00FF" />
 
 </LinearLayout>
