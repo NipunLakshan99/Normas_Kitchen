@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/button_black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:text="Oder Time"
+            android:textColor="#1E1E1E" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="12.46pm"
+            android:textColor="#1E1E1E" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:text="Price"
+            android:textColor="#1E1E1E" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="1000.00"
+            android:textColor="#1E1E1E" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:text="Payment Type"
+            android:textColor="#1E1E1E" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/p_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="Card"
+            android:textColor="#DD2C00"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:text="Address"
+            android:textColor="#1E1E1E" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="194c/mithree road kotahena alpitiya" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background"
+        android:text="Delete"
+        android:textColor="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_boader_dark"
+        android:text="Confirm"
+        android:textColor="#AA00FF" />
+
+</LinearLayout>

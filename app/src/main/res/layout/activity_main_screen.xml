@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.android_app_food_g6.ActivityDelivery.mainScreen">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/asCus"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="Login As a Customer"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/asDel"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="Login As a Delivery Boy"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.LinearLayoutCompat>
