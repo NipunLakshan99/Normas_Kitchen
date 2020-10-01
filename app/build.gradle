@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -37,5 +38,8 @@ dependencies {
 
     //m
     implementation 'com.android.support:design:30.0.0'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
 }
