@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MADCustomer</string>
+    <string name="Home" />
+    <string name="home">Welcome To Nomas Kitchen</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Sign In</string>
+    <string name="register">Sign UP</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="update_profile">Exit</string>
+    <string name="profile">New Member</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="contactno">Contact No</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="editprofile">Manage Account</string>
+    <string name="search">Search</string>
+    <string name="edit">Update Profile</string>
+    <string name="delete">Remove Profile</string>
+    <string name="user_name">User Name </string>
+
+
+    <string name="nic">NIC</string>
+    <string name="email_">E-mail</string>
+    <string name="customer_profile">Customer Profile</string>
+    <string name="myaccount">My Account</string>
+    <string name="my_orders">My Orders</string>
+    <string name="payment_1">Payment</string>
+    <string name="feedback">FeedBack</string>
+
+    <string name="log_out">Log Out</string>
+    <string name="menue_1">Menue</string>
+    <string name="manage_prof">Manage Profile</string>
+    <string name="feedback_1">Feed Back</string>
+    <string name="description_2">Description</string>
+    <string name="add3">Submit </string>
+    <string name="err_name">Enter the valid name</string>
+    <string name="err_tel">Enter the valid mobile No</string>
+    <string name="err_email">Enter the valid Email</string>
+    <string name="my_acc">My Account</string>
+    <string name="descrip">Type Here</string>
+    <string name="dob">Date : yyyy/mm/dd</string>
+    <string name="amount_1">Amount : Rs.00.00</string>
+    <string name="cash">Cash</string>
+    <string name="card">Credit/Debit</string>
+    <string name="proceed">Procced</string>
+    <string name="help">Help</string>
+
+
+</resources>
