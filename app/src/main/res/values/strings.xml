@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Normas_kitchen</string>
+    <string name="Home" />
+    <string name="home">Home</string>
+    <string name="username">User Name</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="profile">Profile</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="address">Address</string>
+    <string name="contactno">Contact No</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="search">Search</string>
+    <string name="edit">Update_Profile</string>
+    <string name="delete">Remove_Profile</string>
+    <string name="name">Name</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="nic">NIC</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="Delivery">"Add Delivery Boy "</string>
+    <string name="editdelivery">Edit Delivery Boy</string>
+    <string name="adddelivey">ADD Delivery Person</string>
+    <string name="panelad">Admin Panel</string>
+    <string name="Managedeliverybtn">Manage Delivery</string>
+    <string name="Viewuserbtn">View  Users</string>
+    <string name="Vieeorders">View Orders</string>
+    <string name="exitadmin">EXIT</string>
+</resources>
