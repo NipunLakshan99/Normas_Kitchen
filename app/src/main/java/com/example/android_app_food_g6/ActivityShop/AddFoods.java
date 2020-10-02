@@ -102,6 +102,7 @@ public class AddFoods extends AppCompatActivity {
                             System.out.println(folder.getDownloadUrl());
                             Foods foods = new Foods(type, name.getText().toString(), downloadUri.toString(), price.getText().toString(), dr.getKey());
                             keyTable1.setValue(foods);
+                            finish();
                         } else {
                             // Handle failures
                             // ...

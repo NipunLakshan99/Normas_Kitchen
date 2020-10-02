@@ -36,6 +36,7 @@ public class RegisterCus extends AppCompatActivity {
                 DatabaseReference customerid = customerRef.push();
                 Customer customer = new Customer(customerid.getKey(), name.getText().toString(), password.getText().toString(), "Customer", address.getText().toString());
                 customerid.setValue(customer);
+                finish();
             }
         });
 

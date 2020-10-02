@@ -37,7 +37,6 @@ public class AdapterMenu extends RecyclerView.Adapter<AdapterMenu.LoadTypes> {
     public AdapterMenu(Context context, List<MenuTypes> list) {
         this.context = context;
         this.list = list;
-        System.out.println(list.size() + "fffffffffffffffffff");
     }
 
     @Override

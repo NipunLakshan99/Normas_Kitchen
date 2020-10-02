@@ -49,8 +49,8 @@
             android:layout_toLeftOf="@+id/cartnavi"
             android:layout_toEndOf="@+id/imageView3"
             android:layout_toRightOf="@+id/imageView3"
-            android:fontFamily="casual"
             android:text="Name"
+            android:gravity="center"
             android:layout_centerVertical="true"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -97,6 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/menuText"
+        android:padding="8dp"
         tools:layout_editor_absoluteX="-3dp">
 
     </androidx.recyclerview.widget.RecyclerView>

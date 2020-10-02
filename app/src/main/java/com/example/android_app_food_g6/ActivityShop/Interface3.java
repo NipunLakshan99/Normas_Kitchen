@@ -2,6 +2,7 @@ package com.example.android_app_food_g6.ActivityShop;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -27,6 +28,7 @@ public class Interface3 extends AppCompatActivity {
     String type;
     TextView title;
     ArrayList<Foods> foods = new ArrayList<>();
+    Button done;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,14 @@ public class Interface3 extends AppCompatActivity {
 
         title=findViewById(R.id.menuText);
         title.setText(type);
+
+        done=findViewById(R.id.done);
+        done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         FirebaseDatabase rootRef1 = FirebaseDatabase.getInstance();
         final DatabaseReference menutypeRef = rootRef1.getReference("Foods").child(type);

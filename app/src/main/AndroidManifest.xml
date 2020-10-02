@@ -18,6 +18,13 @@
         <activity android:name="com.example.android_app_food_g6.ActivityShop.AddFoods" />
         <activity android:name="com.example.android_app_food_g6.ActivityShop.EditFoods" />
         <activity android:name="com.example.android_app_food_g6.ActivityShop.Cart" />
+        <activity android:name="com.example.android_app_food_g6.ActivityDelivery.mainScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.android_app_food_g6.ActivityDelivery.RegisterDelivery"></activity>
         <activity android:name="com.example.android_app_food_g6.ActivityDelivery.LoginDelivery" />
         <activity android:name="com.example.android_app_food_g6.ActivityDelivery.MainActivityDelivery" />
@@ -28,11 +35,7 @@
         <activity android:name="com.example.android_app_food_g6.udperson" />
         <activity android:name="com.example.android_app_food_g6.ActivityShop.Menu"></activity>
         <activity android:name="com.example.android_app_food_g6.ActivityShop.Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="com.example.android_app_food_g6.ActivityShop.Interface3" />
     </application>

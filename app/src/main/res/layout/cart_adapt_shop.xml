@@ -3,7 +3,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:padding="8dp">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/itemName"
@@ -19,6 +20,7 @@
         android:layout_height="50dp"
         android:gravity="center"
         android:text="Qty"
+        android:textStyle="bold"
         android:layout_marginLeft="32dp" />
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/itemPrice"

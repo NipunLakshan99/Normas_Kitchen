@@ -80,6 +80,7 @@ public class Menu extends AppCompatActivity {
                     if (postSnapshot.getChildrenCount() == menutypes.size()) {
                         // The child doesn't exist
                         final RecyclerView view = findViewById(R.id.menu_typesRe);
+                        System.out.println(Login.type);
                         AdapterMenu menure = new AdapterMenu(getApplicationContext(), menutypes);
                         view.setAdapter(menure);
                         view.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));

@@ -31,8 +31,11 @@
     </LinearLayout>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/delete"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete"/>
+        android:text="Delete"
+        android:padding="8dp"
+        android:background="@drawable/button_boader_dark"
+        android:textColor="#AA00FF"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

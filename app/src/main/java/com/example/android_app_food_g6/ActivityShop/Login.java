@@ -69,7 +69,7 @@ public class Login extends AppCompatActivity {
                             if (username.getText().toString().equals(customer.getName()) && password.getText().toString().equals(customer.getPassword())) {
                                 userid = customer.getId();
                                 name = customer.getName();
-                                type = customer.getType();
+                                Login.type = customer.getType();
                                 Intent i = new Intent(Login.this, Menu.class);
                                 startActivity(i);
                                 Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
