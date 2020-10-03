@@ -37,7 +37,7 @@ public class AdapterBill extends RecyclerView.Adapter<AdapterBill.LoadBill>{
     public void onBindViewHolder(@NonNull LoadBill holder, int position) {
         holder.qty.setText(list.get(position).getQty()+"");
         holder.name.setText(list.get(position).getFoodname());
-        holder.price.setText(list.get(position).getPrice());
+        holder.price.setText("Rs "+list.get(position).getPrice());
 
 
 

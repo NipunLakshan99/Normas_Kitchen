@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.android_app_food_g6.ActivityShop.AddFoods">
 
     <ImageView
@@ -28,6 +29,8 @@
         android:background="@drawable/button_black"
         android:padding="8dp"
         android:inputType="text"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +48,8 @@
         android:background="@drawable/button_black"
         android:padding="8dp"
         android:inputType="text"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"

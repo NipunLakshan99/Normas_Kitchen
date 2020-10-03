@@ -47,7 +47,7 @@ public class AdapterEdit extends RecyclerView.Adapter<AdapterEdit.LoadEditFoods>
     public void onBindViewHolder(final LoadEditFoods loadEditFoods, final int i) {
 
         loadEditFoods.name.setText(list.get(i).getName());
-        loadEditFoods.price.setText(list.get(i).getPrice());
+        loadEditFoods.price.setText("Rs "+list.get(i).getPrice());
         Glide.with(context).load(list.get(i).getImage()).into(loadEditFoods.imageView);
 
         final Foods type = list.get(i);

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.android_app_food_g6.ActivityShop.Menu">
 
 <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
@@ -50,6 +51,7 @@
             android:layout_toEndOf="@+id/imageView3"
             android:layout_toRightOf="@+id/imageView3"
             android:text="Name"
+
             android:gravity="center"
             android:layout_centerVertical="true"
             android:textSize="30sp"
@@ -87,6 +89,7 @@
         android:layout_marginEnd="8dp"
         android:text="Menu"
         android:textSize="30dp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

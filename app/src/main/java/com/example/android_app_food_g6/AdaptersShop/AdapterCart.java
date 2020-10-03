@@ -36,7 +36,7 @@ public class AdapterCart extends RecyclerView.Adapter<AdapterCart.LoadCartItem> 
     @Override
     public void onBindViewHolder(@NonNull LoadCartItem holder, int position) {
         holder.name.setText(list.get(position).getFoodname());
-        holder.price.setText(list.get(position).getPrice());
+        holder.price.setText("Rs "+list.get(position).getPrice());
         holder.qty.setText(list.get(position).getQty()+"");
 
 

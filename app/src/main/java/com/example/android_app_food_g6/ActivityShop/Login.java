@@ -28,7 +28,7 @@ public class Login extends AppCompatActivity {
     public static String userid;
     public static String name;
     public static String type;
-    TextView reg;
+//    TextView reg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,14 +37,14 @@ public class Login extends AppCompatActivity {
         username = findViewById(R.id.un);
         password = findViewById(R.id.pw);
         login = findViewById(R.id.btnlogin);
-        reg = findViewById(R.id.signup);
-        reg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this, RegisterCus.class);
-                startActivity(intent);
-            }
-        });
+//        reg = findViewById(R.id.signup);
+//        reg.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Login.this, RegisterCus.class);
+//                startActivity(intent);
+//            }
+//        });
 
 //        FirebaseDatabase rootRef1 = FirebaseDatabase.getInstance();
         DatabaseReference rootRef1 = FirebaseDatabase.getInstance().getReference();

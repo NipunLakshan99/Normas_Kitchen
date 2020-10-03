@@ -144,7 +144,7 @@ public class Bill extends AppCompatActivity {
                         view.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
                     }
                 }
-                tot.setText(total + "");
+                tot.setText("Rs "+total + "");
                 System.out.println(tot);
             }
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.android_app_food_g6.ActivityShop.Bill">
 
     <TextView
@@ -16,6 +17,7 @@
         android:gravity="center"
         android:text="Payment Details"
         android:textSize="30dp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +38,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
+            android:textColor="#000000"
             android:gravity="center"
             android:text="Order Id" />
 
@@ -68,6 +71,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:gravity="center"
+            android:textColor="#000000"
             android:text="Customer Name" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -100,6 +104,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:gravity="center"
+            android:textColor="#000000"
             android:text="Order Time" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -131,6 +136,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:gravity="center"
+            android:textColor="#000000"
             android:text="Address" />
 
         <EditText
@@ -162,6 +168,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:gravity="center"
+            android:textColor="#000000"
             android:text="Payment Type" />
 
         <RadioGroup

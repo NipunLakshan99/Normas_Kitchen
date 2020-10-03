@@ -55,7 +55,7 @@ public class AdapterViewFoods extends RecyclerView.Adapter<AdapterViewFoods.Load
     public void onBindViewHolder(final LoadFoods loadFoods, final int i) {
 
         loadFoods.name.setText(list.get(i).getName());
-        loadFoods.price.setText(list.get(i).getPrice());
+        loadFoods.price.setText("Rs "+list.get(i).getPrice());
         Glide.with(context).load(list.get(i).getImage()).into(loadFoods.image);
 
         final Foods foods = list.get(i);

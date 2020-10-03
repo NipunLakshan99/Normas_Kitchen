@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context="com.example.android_app_food_g6.ActivityDelivery.mainScreen">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -23,7 +24,7 @@
         android:layout_marginRight="16dp"
         android:background="@drawable/button_background"
         android:gravity="center"
-        android:text="Login As a Customer"
+        android:text="Login To Restaurant"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold" />
